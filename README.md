@@ -8,3 +8,4 @@
 7. [别再怀疑自己的智商了，Raft协议本来就不好理解](https://zhuanlan.zhihu.com/p/36547283)
 8. [raft-java](https://github.com/wenweihu86/raft-java)
 9. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
+10. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
