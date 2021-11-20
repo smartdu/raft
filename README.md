@@ -10,3 +10,8 @@
 9. [raft-java](https://github.com/wenweihu86/raft-java)
 10. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
 11. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
+
+Raft协议约定，Candidate在使用新的Term进行选举的时候，Candidate能够被选举为Leader的条件为：
+
+* 得到一半以上(包括自己)节点的投票
+* 得到投票的前提是：Candidate节点的最后一个LogEntry的Term比Follower节点大，或者在Term一样情况下，LogEnry的SN(serial number)必须大于等于Follower的。
