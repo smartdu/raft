@@ -1,15 +1,16 @@
 # raft
-1. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
-2. [别再怀疑自己的智商了，Raft协议本来就不好理解](https://zhuanlan.zhihu.com/p/36547283)
-3. [易于理解的分布式共识算法，Raft!](https://www.bilibili.com/video/BV1Wy4y1K7zF?from=search&seid=17513827445260524308&spm_id_from=333.337.0.0)
-4. [Raft 分布式一致性(共识)算法 论文精读与ETCD源码分析](https://www.bilibili.com/video/BV1CK4y127Lj?from=search&seid=12071754576012314707&spm_id_from=333.337.0.0)
-5. [Raft-论文导读与ETCD源码解读](https://hardcore.feishu.cn/docs/doccnMRVFcMWn1zsEYBrbsDf8De)
-6. [Raft Visualization](https://raft.github.io/)
-7. [The Secret Lives of Data](http://thesecretlivesofdata.com/raft/)
-8. [深入剖析共识性算法 Raft](https://xie.infoq.cn/article/e145b0ce120e0ad77495017d6)
-9. [raft-java](https://github.com/wenweihu86/raft-java)
-10. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
-11. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
+1. [分布式一致性协议概述](https://zhuanlan.zhihu.com/p/130974371)
+2. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
+3. [别再怀疑自己的智商了，Raft协议本来就不好理解](https://zhuanlan.zhihu.com/p/36547283)
+4. [易于理解的分布式共识算法，Raft!](https://www.bilibili.com/video/BV1Wy4y1K7zF?from=search&seid=17513827445260524308&spm_id_from=333.337.0.0)
+5. [Raft 分布式一致性(共识)算法 论文精读与ETCD源码分析](https://www.bilibili.com/video/BV1CK4y127Lj?from=search&seid=12071754576012314707&spm_id_from=333.337.0.0)
+6. [Raft-论文导读与ETCD源码解读](https://hardcore.feishu.cn/docs/doccnMRVFcMWn1zsEYBrbsDf8De)
+7. [Raft Visualization](https://raft.github.io/)
+8. [The Secret Lives of Data](http://thesecretlivesofdata.com/raft/)
+9. [深入剖析共识性算法 Raft](https://xie.infoq.cn/article/e145b0ce120e0ad77495017d6)
+10. [raft-java](https://github.com/wenweihu86/raft-java)
+11. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
+12. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
 
 # 笔记
 一、Raft协议约定，Candidate在使用新的Term进行选举的时候，Candidate能够被选举为Leader的条件为：
