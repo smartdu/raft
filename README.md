@@ -20,4 +20,4 @@
 二、Raft日志复制原则：
 * `只有当前Term的LogEntry提交条件为：满足多数派响应之后(一半以上节点Append LogEntry到日志)设置为Commit`
 * `前一轮Term未Commit的LogEntry的Commit依赖于高轮Term LogEntry的Commit`
-* `Follower在接收到LogEntry的时候，如果发现发送者节点当前的Term大于等于Follower当前的Term；并且发现相同序号的(相同SN)LogEntry在Follower上存在，未Commit，并且LogEntry Term不一致，那么Follower直接截断从[SN~文件末尾)的所有内容，然后将接收到的LogEntryAppend到截断后的文件末尾`
+* `Follower在接收到LogEntry的时候，如果发现发送者节点当前的Term大于等于Follower当前的Term；并且发现相同序号的(相同SN)LogEntry在Follower上存在，未Commit，并且LogEntry Term不一致，那么Follower直接截断从[SN~文件末尾)的所有内容，然后将接收到的LogEntry Append到截断后的文件末尾`
