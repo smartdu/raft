@@ -11,7 +11,13 @@
 10. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
 11. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
 
-Raft协议约定，Candidate在使用新的Term进行选举的时候，Candidate能够被选举为Leader的条件为：
+# 笔记
+一、Raft协议约定，Candidate在使用新的Term进行选举的时候，Candidate能够被选举为Leader的条件为：
 
-* 得到一半以上(包括自己)节点的投票
-* 得到投票的前提是：Candidate节点的最后一个LogEntry的Term比Follower节点大，或者在Term一样情况下，LogEnry的SN(serial number)必须大于等于Follower的。
+* `得到一半以上(包括自己)节点的投票`
+* `得到投票的前提是：Candidate节点的最后一个LogEntry的Term比Follower节点大，或者在Term一样情况下，LogEnry的SN(serial number)必须大于等于Follower的`
+
+二、Raft日志复制原则：
+* `只有当前Term的LogEntry提交条件为：满足多数派响应之后(一半以上节点Append LogEntry到日志)设置为Commit`
+* `前一轮Term未Commit的LogEntry的Commit依赖于高轮Term LogEntry的Commit`
+* `Follower在接收到LogEntry的时候，如果发现发送者节点当前的Term大于等于Follower当前的Term；并且发现相同序号的(相同SN)LogEntry在Follower上存在，未Commit，并且LogEntry Term不一致，那么Follower直接截断从[SN~文件末尾)的所有内容，然后将接收到的LogEntryAppend到截断后的文件末尾`
