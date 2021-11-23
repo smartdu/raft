@@ -1,8 +1,8 @@
 # raft
 
-[raf英文y论文](https://raft.github.io/raft.pdf)
+[raft英文论文](https://raft.github.io/raft.pdf)
 
-[raf中文论文](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
+[raft中文论文](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
 
 [raft博士论文](https://web.stanford.edu/~ouster/cgi-bin/papers/OngaroPhD.pdf)
 
