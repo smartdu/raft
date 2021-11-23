@@ -8,6 +8,10 @@
 
 [raft ppt](http://www2.cs.uh.edu/~paris/6360/PowerPoint/Raft.ppt)
 
+[Raft: A Consensus Algorithm for Replicated Logs](https://www.cs.utah.edu/~stutsman/cs6450/public/raft.pdf)
+
+[Raft lecture (Raft user study)](https://www.bilibili.com/video/BV1564y1i7Wd/?spm_id_from=333.788.recommend_more_video.0)
+
 1. [一致性协议浅析：从逻辑时钟到Raft](https://zhuanlan.zhihu.com/p/57109373)
 2. [分布式一致性协议概述](https://zhuanlan.zhihu.com/p/130974371)
 3. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
