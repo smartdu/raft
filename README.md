@@ -6,6 +6,8 @@
 
 [raft博士论文](https://web.stanford.edu/~ouster/cgi-bin/papers/OngaroPhD.pdf)
 
+[raft ppt](http://www2.cs.uh.edu/~paris/6360/PowerPoint/Raft.ppt)
+
 1. [一致性协议浅析：从逻辑时钟到Raft](https://zhuanlan.zhihu.com/p/57109373)
 2. [分布式一致性协议概述](https://zhuanlan.zhihu.com/p/130974371)
 3. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
