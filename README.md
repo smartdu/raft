@@ -39,3 +39,13 @@
 * `只有当前Term的LogEntry提交条件为：满足多数派响应之后(一半以上节点Append LogEntry到日志)设置为Commit`
 * `前一轮Term未Commit的LogEntry的Commit依赖于高轮Term LogEntry的Commit`
 * `Follower在接收到LogEntry的时候，如果发现发送者节点当前的Term大于等于Follower当前的Term；并且发现相同序号的(相同SN)LogEntry在Follower上存在，未Commit，并且LogEntry Term不一致，那么Follower直接截断从[SN~文件末尾)的所有内容，然后将接收到的LogEntry Append到截断后的文件末尾`
+
+三、PreVote：
+
+在PreVote算法中，Candidate首先要确认自己能赢得集群中大多数节点的投票，这样才会把自己的term增加，然后发起真正的投票。其他投票节点同意发起选举的条件是（同时满足下面两个条件）：
+
+* 没有收到有效领导的心跳，至少有一次选举超时。
+* Candidate的日志足够新（Term更大，或者Term相同raft index更大）。
+
+
+PreVote算法解决了网络分区节点在重新加入时，会中断集群的问题。在PreVote算法中，网络分区节点由于无法获得大部分节点的许可，因此无法增加其Term。然后当它重新加入集群时，它仍然无法递增其Term，因为其他服务器将一直收到来自Leader节点的定期心跳信息。一旦该服务器从领导者接收到心跳，它将返回到Follower状态，Term和Leader一致。
