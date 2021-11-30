@@ -12,19 +12,20 @@
 
 [Raft lecture (Raft user study)](https://www.bilibili.com/video/BV1564y1i7Wd/?spm_id_from=333.788.recommend_more_video.0)
 
-1. [深入剖析共识性算法 Raft](https://xie.infoq.cn/article/e145b0ce120e0ad77495017d6)
-2. [一致性协议浅析：从逻辑时钟到Raft](https://zhuanlan.zhihu.com/p/57109373)
-3. [分布式一致性协议概述](https://zhuanlan.zhihu.com/p/130974371)
-4. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
-5. [别再怀疑自己的智商了，Raft协议本来就不好理解](https://zhuanlan.zhihu.com/p/36547283)
-6. [易于理解的分布式共识算法，Raft!](https://www.bilibili.com/video/BV1Wy4y1K7zF?from=search&seid=17513827445260524308&spm_id_from=333.337.0.0)
-7. [Raft 分布式一致性(共识)算法 论文精读与ETCD源码分析](https://www.bilibili.com/video/BV1CK4y127Lj?from=search&seid=12071754576012314707&spm_id_from=333.337.0.0)
-8. [Raft-论文导读与ETCD源码解读](https://hardcore.feishu.cn/docs/doccnMRVFcMWn1zsEYBrbsDf8De)
-9. [Raft Visualization](https://raft.github.io/)
-10. [The Secret Lives of Data](http://thesecretlivesofdata.com/raft/)
-11. [raft-java](https://github.com/wenweihu86/raft-java)
-12. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
-13. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
+1. [分布式一致性算法Raft](https://cloud.tencent.com/developer/article/1836319)
+2. [深入剖析共识性算法 Raft](https://xie.infoq.cn/article/e145b0ce120e0ad77495017d6)
+3. [一致性协议浅析：从逻辑时钟到Raft](https://zhuanlan.zhihu.com/p/57109373)
+4. [分布式一致性协议概述](https://zhuanlan.zhihu.com/p/130974371)
+5. [Raft 一致性协议](https://zhuanlan.zhihu.com/p/29678067)
+6. [别再怀疑自己的智商了，Raft协议本来就不好理解](https://zhuanlan.zhihu.com/p/36547283)
+7. [易于理解的分布式共识算法，Raft!](https://www.bilibili.com/video/BV1Wy4y1K7zF?from=search&seid=17513827445260524308&spm_id_from=333.337.0.0)
+8. [Raft 分布式一致性(共识)算法 论文精读与ETCD源码分析](https://www.bilibili.com/video/BV1CK4y127Lj?from=search&seid=12071754576012314707&spm_id_from=333.337.0.0)
+9. [Raft-论文导读与ETCD源码解读](https://hardcore.feishu.cn/docs/doccnMRVFcMWn1zsEYBrbsDf8De)
+10. [Raft Visualization](https://raft.github.io/)
+11. [The Secret Lives of Data](http://thesecretlivesofdata.com/raft/)
+12. [raft-java](https://github.com/wenweihu86/raft-java)
+13. [彻底搞懂Raft算法](https://www.bilibili.com/video/BV1Ev411t7jh?from=search&seid=8166262473378527174&spm_id_from=333.337.0.0)
+14. [6.824 Lab 2: Raft](https://pdos.csail.mit.edu/6.824/labs/lab-raft.html)
 
 # 笔记
 一、Raft协议约定，Candidate在使用新的Term进行选举的时候，Candidate能够被选举为Leader的条件为：
