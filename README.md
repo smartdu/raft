@@ -6,9 +6,9 @@
 
 [raft博士论文](./OngaroPhD.pdf)
 
-[raft ppt](./In Search of an Understandable Consensus Algorithm.ppt)
+[raft ppt](http://www2.cs.uh.edu/~paris/6360/PowerPoint/Raft.ppt)
 
-[Raft: A Consensus Algorithm for Replicated Logs](A Consensus Algorithm for Replicated Logs.pdf)
+[Raft: A Consensus Algorithm for Replicated Logs](https://www.cs.utah.edu/~stutsman/cs6450/public/raft.pdf)
 
 [Raft lecture (Raft user study)](https://www.bilibili.com/video/BV1564y1i7Wd/?spm_id_from=333.788.recommend_more_video.0)
 
